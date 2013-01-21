@@ -1,10 +1,12 @@
-# Publishing your website with WEW
+# Publishing files to whateverweb hosting with git
+How to use the hosting facility.
+##Introduction
 
 Publishing with WEW can be used for tasks like quick prototyping, real device testing and client testing. It can even be used for running your site in production, in an environment where we strive to do as much of the optimizations as possible without you having to worry about it. Some tasks like image processing, preprocessing and javascript/CSS compression are performed once when you publish your site. Other optimizations, like serving compressed resources, cache friendly headers and resources are handled per request by our delivery servers.
 
 Hosting on WEW is based on *git*. When enabling this option in the WEW control panel you are given your own *git* repository. This actually means that you also get full-fledged source control management for your site when publishing with WEW.
 
-##### Features
+#### Features
 * Image optimization
 	* Published images will be optimized for web (removing EXIF data, checking or/and adjusting compression and quality levels)
 * JavaScript optimization
@@ -14,6 +16,16 @@ Hosting on WEW is based on *git*. When enabling this option in the WEW control p
 	* CSS files are served using the WEW SSMQ engine, which will strip away styles irrelevant for requesting device, provide extended (server side) media query capabilities and inline import statements
 * Markup
 	* Published HTML will be optimized (configurable)
+
+##Getting started
+1. Sign up for a free account at [whateverweb.com](http://whateverweb.com/)
+2. Register an application to get an application key and service URL.
+
+The base url to reach your files in your repository is:
+
+	http://<yourApplicationAlias>.wew.io/
+	
+Or you can simply CNAME if you want to use your own domain name.
 
 ### Setting up your GIT repository
 
