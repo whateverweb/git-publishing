@@ -10,14 +10,20 @@ Hosting on WEW is based on *git*. When enabling this option in the WEW control p
 * Image optimization
 	* Published images will be optimized for web (removing EXIF data, checking or/and adjusting compression and quality levels)
 * JavaScript optimization
-	* JavaScript will be compressed (configurable)
+	* JavaScript will be compressed
 * CSS
 	* SASS-support: both SASS and SCSS files will be preprocessed to CSS when published. Supports Compass extensions
-	* CSS files are served using the WEW SSMQ engine, which will strip away styles irrelevant for requesting device, provide extended (server side) media query capabilities and inline import statements
-* Markup
-	* Published HTML will be optimized (configurable)
 
-##Getting started
+#### Coming soon
+* Markup
+	* Published HTML will be optimized
+* CSS
+	* CSS files are served using the WEW CSS processor, which can strip away styles irrelevant for requesting device, provide extended (server side) media query capabilities and inline import statements
+	* LESS-support: Preprocessing of LESS files
+* JavaScript
+	* Inlining/import of JS-libraries
+
+## Getting started
 1. Sign up for a free account at [whateverweb.com](http://whateverweb.com/)
 2. Register an application to get an application key and service URL.
 
