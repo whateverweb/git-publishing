@@ -66,7 +66,7 @@ NOTE: The following is only a crash-course to *git*. Lots of *git* functionality
 
 	Or, if all your files (and subfolders) are to be added, do:
 	
-		git add -a
+		git add -A
 
 3. Commit your changes
 
